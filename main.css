@@ -1,12 +1,3 @@
-.vrac {
-    "X" #000 #fff #fff 2px solid 0 0 0 0 0 100% 100% 100% 1rem 1rem 1rem 2px
-    solid #fff 2rem 2rem 2rem 50% absolute auto background-color background-color
-    block border border border-radius bottom center center color content cursor
-    display display fixed font-family grid height height height left line-height 
-    margin max-width padding place-content pointer position position
-    rgba(0,0,0,0.9) right right sans-serif text-align top top width width
-}
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -21,27 +12,27 @@
     place-content: center;
 }
 .overlay::after {
-    /* Add content : "X" */
-    /* White text color */
-    /* Black background color */
-    /* Font family "sans-serif" */
-    /* Centered text */
-    /* Line height ( idem height ) */
-    /* Display as a block */
-    /* Position absolute */
-    /* 1rem from the top */
-    /* 1rem from the right */
-    /* 2rem width */
-    /* 2rem height */
-    /* White border of 2px */
-    /* Rounded border */
+    content: "X";
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+    text-align: center;;
+    line-height: fixed;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: #fff 2px solid;
+    border-radius: 50%;
 }
 .overlay>figure {
-    /* No margin */
-    /* 1rem padding */
-    /* White border of 2px */
+    margin: 0;
+    padding: 1rem;
+    border: #fff 2px solid;
 }
 .overlay>figure>img {
-    /* Max width 100% for responsive image */
-    /* Height auto for keeping the ratio */
+    max-width: 100%;
+    height: auto;
 }
